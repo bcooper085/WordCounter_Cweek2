@@ -11,11 +11,11 @@ namespace Counter
         {
             Get["/"] = _ => View["index.cshtml"];
 
-            // Post["/move_form"] = _ => {
-            //     ScrabbleApp obj = new ScrabbleApp();
-            //     int output = obj.MoveScore(Request.Form["playerMove"]);
-            //     return View["index.cshtml", output];
-            // };
+            Post["/counter_form"] = _ => {
+                RepeatCounter obj = new RepeatCounter(Request.Form["enterSentence"], Request.Form["searchWord"]);
+                int output = obj.CountRepeats();
+                return View["results.cshtml", output];
+            };
 
         }
     }
