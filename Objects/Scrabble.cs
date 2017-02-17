@@ -3,9 +3,46 @@ using System.Collections.Generic;
 
 namespace Counter.Objects
 {
-    public class CounterApp
+    public class RepeatCounter
     {
+        private string[] _sentenceInput;
+        private string _wordInput;
 
+        public RepeatCounter(string sentence, string word)
+        {
+            _sentenceInput = sentence.Split(' ');
+            _wordInput = word;
+        }
+
+        public int CountRepeats()
+        {
+            int counter = 0;
+            for (int i = 0; i < _sentenceInput.Length; i++)
+            {
+                if (_sentenceInput[i] == _wordInput)
+                {
+                    counter += 1;
+                }
+                return counter;
+            }
+        }
+
+        public string[] GetSentenceInput()
+        {
+            return _sentenceInput;
+        }
+        public string GetWordInput()
+        {
+            return _wordInput;
+        }
+        // public void SetSentenceInput(string sentence)
+        // {
+        //     _sentenceInput = sentence;
+        // }
+        // public void SetWordInput(string word)
+        // {
+        //     _wordInput = word;
+        // }
 
     }
 }

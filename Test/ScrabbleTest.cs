@@ -5,20 +5,20 @@ using Counter.Objects;
 
 namespace Counter
 {
-    public class CounterTest
+    public class RepeatCounterTest
     {
-        // [Fact]
-        // public void MoveScore_EachLetterEqualsOne_aEquals1()
-        // {
-        //     //Arrange
-        //     ScrabbleApp testScrabble = new ScrabbleApp();
-        //
-        //     //Act
-        //     int testResult = testScrabble.MoveScore("a");
-        //
-        //     //Accept
-        //     Assert.Equal(1, testResult);
-        // }
+        [Fact]
+        public void CountRepeats_SearchSentenceForWord_AinAis1()
+        {
+            //Arrange
+            RepeatCounter testCounter = new RepeatCounter("a","a");
+
+            //Act
+            int testResult = testCounter.CountRepeats();
+
+            //Accept
+            Assert.Equal(1, testResult);
+        }
 
     }
 }
