@@ -28,7 +28,7 @@ Reason: If true we can simply increment an int variable.
 * It manages case sensitive inputs<br>
 _Input: "Hello World" Keyword: "hello"_<br>
 _Output: int counter = 1_<br>
-
+Reason: Simplest to test one case sensitive letter.
 
 ## Setup
 

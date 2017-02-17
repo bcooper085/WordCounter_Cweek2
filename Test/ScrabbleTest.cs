@@ -55,6 +55,5 @@ namespace Counter
             //Accept
             Assert.Equal(1, testResult);
         }
-
     }
 }
