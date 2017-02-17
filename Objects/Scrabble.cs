@@ -11,7 +11,7 @@ namespace Counter.Objects
         public RepeatCounter(string sentence, string word)
         {
             _sentenceInput = sentence.Split(' ');
-            _wordInput = word;
+            _wordInput = word.ToLower();
         }
 
         public int CountRepeats()
