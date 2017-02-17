@@ -20,7 +20,7 @@ namespace Counter
             Assert.Equal(1, testResult);
         }
         [Fact]
-        public void CountRepeats_SearchSentenceForWord_AinAis1()
+        public void CountRepeats_SearchSentenceForWord_HelloInHelloWorldis1()
         {
             //Arrange
             RepeatCounter testCounter = new RepeatCounter("hello world","hello");
@@ -30,6 +30,18 @@ namespace Counter
 
             //Accept
             Assert.Equal(1, testResult);
+        }
+        [Fact]
+        public void CountRepeats_SearchSentenceForMultipleWordMatch_HelloInHelloHelloWorld2()
+        {
+            //Arrange
+            RepeatCounter testCounter = new RepeatCounter("hello hello world","hello");
+
+            //Act
+            int testResult = testCounter.CountRepeats();
+
+            //Accept
+            Assert.Equal(2, testResult);
         }
 
     }
