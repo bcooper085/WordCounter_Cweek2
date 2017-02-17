@@ -5,25 +5,26 @@
 #### By: _Brandon Cooper_
 
 ## Specifications
-* App will store user input string in an array.<br>
-_Input: "a"_<br>
-_Output: [0] = "a"_<br>
-Reason: A single word would be the easiest value to compare.
-
-* App will allow user to input a word in a second field and store value in an array.<br>
-_Input: "a"_<br>
-_Output: [0] = "a"_<br>
-Reason: A single word would be the easiest value to compare.
-
-* App will compare word to sentence and determine if word is used in sentence.<br>
-_Input: ([0] == [0])_<br>
-_output: True_<br>
-Reason: Storing both values in an array will be the simplest way to compare value.
+* It compares two inputs for a valid match.<br>
+_Input: ("a" == "a")_<br>
+_output: true_<br>
+Reason: Simplest test is to compare two single values.
 
 * App will display counter of how many times word is used if previous output is true.<br>
-_Input: True_<br>
+_Input: ("a" == "a")_<br>
 _Output: int counter = 1_<br>
-Reason: If true we can simply increment an int variable.    
+Reason: If true we can simply increment an int variable.     
+
+* It loops through multiple words and compares to separate input for match.<br>
+_Input: "hello world" Keyword: "hello"_<br>
+_Output: int counter = 1_<br>
+Reason: If true we can simply increment an int variable.
+
+* It loops through multiple words and compares to separate input for multiple matchs.<br>
+_Input: "hello world" Keyword: "hello"_<br>
+_Output: int counter = 1_<br>
+Reason: If true we can simply increment an int variable.
+
 
 ## Setup
 
