@@ -22,8 +22,12 @@ Reason: If true we can simply increment an int variable.
 
 * It loops through multiple words and compares to separate input for multiple matchs.<br>
 _Input: "hello world" Keyword: "hello"_<br>
-_Output: int counter = 1_<br>
+_Output: int counter = 2_<br>
 Reason: If true we can simply increment an int variable.
+
+* It manages case sensitive inputs<br>
+_Input: "Hello World" Keyword: "hello"_<br>
+_Output: int counter = 1_<br>
 
 
 ## Setup

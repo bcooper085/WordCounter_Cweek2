@@ -43,6 +43,18 @@ namespace Counter
             //Accept
             Assert.Equal(2, testResult);
         }
+        [Fact]
+        public void CountRepeats_SearchSentenceForCaseSensitiveWordMatch_HELLOInHelloWorld()
+        {
+            //Arrange
+            RepeatCounter testCounter = new RepeatCounter("hello world","HELLO");
+
+            //Act
+            int testResult = testCounter.CountRepeats();
+
+            //Accept
+            Assert.Equal(1, testResult);
+        }
 
     }
 }
