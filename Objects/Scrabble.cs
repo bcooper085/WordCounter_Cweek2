@@ -27,13 +27,13 @@ namespace Counter.Objects
             return counter;
         }
 
-        public string[] GetSentenceInput()
-        {
-            return _sentenceInput;
-        }
-        public string GetWordInput()
-        {
-            return _wordInput;
-        }
+        // public string[] GetSentenceInput()
+        // {
+        //     return _sentenceInput;
+        // }
+        // public string GetWordInput()
+        // {
+        //     return _wordInput;
+        // }
     }
 }
