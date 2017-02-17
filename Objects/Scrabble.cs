@@ -17,7 +17,7 @@ namespace Counter.Objects
         public int CountRepeats()
         {
             int counter = 0;
-            for (int i = 0; i < _sentenceInput.Length; i++)
+            for (int i = 0; i < _sentenceInput.Length - 1; i++)
             {
                 if (_sentenceInput[i] == _wordInput)
                 {
