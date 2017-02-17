@@ -23,8 +23,8 @@ namespace Counter.Objects
                 {
                     counter += 1;
                 }
-                return counter;
             }
+            return counter;
         }
 
         public string[] GetSentenceInput()
@@ -35,14 +35,5 @@ namespace Counter.Objects
         {
             return _wordInput;
         }
-        // public void SetSentenceInput(string sentence)
-        // {
-        //     _sentenceInput = sentence;
-        // }
-        // public void SetWordInput(string word)
-        // {
-        //     _wordInput = word;
-        // }
-
     }
 }
