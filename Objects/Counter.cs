@@ -10,7 +10,7 @@ namespace Counter.Objects
 
         public RepeatCounter(string sentence, string word)
         {
-            _sentenceInput = sentence.Split(' ');
+            _sentenceInput = sentence.ToLower().Split(' ');
             _wordInput = word.ToLower();
         }
 
